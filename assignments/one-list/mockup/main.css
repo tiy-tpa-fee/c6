@@ -1,0 +1,76 @@
+html {
+  height: 100vh;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
+  color: #fff;
+  font-family: "Comfortaa";
+  font-size: 24px;
+  background-color: #5cadd6;
+}
+
+h1 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+main {
+  flex: 1;
+}
+
+form input {
+  border: none;
+  padding: 0.3em 0.2em 0;
+  width: 100%;
+  color: #074863;
+  font-size: 1em;
+  line-height: 1.5em;
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+form input:focus {
+  outline: 0;
+  background-color: #fff;
+  opacity: 1;
+}
+
+ul.one-list {
+  padding: 0;
+  list-style: none;
+}
+
+ul.one-list,
+input {
+  font-family: "Neucha", cursive;
+}
+
+ul.one-list li {
+  margin: 0.2em;
+}
+
+ul.one-list li,
+form {
+  align-items: flex-start;
+  display: flex;
+}
+
+ul.one-list li.completed {
+  opacity: 0.5;
+}
+
+ul.one-list li.completed span {
+  text-decoration: line-through;
+}
+
+header,
+main,
+footer {
+  max-width: 30em;
+}

@@ -1,0 +1,74 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 100%;
+  background-color: hsl(196, 50%, 50%);
+}
+
+main {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+main img {
+  position: absolute;
+  top: 0;
+  animation-duration: 400ms;
+  animation-name: popIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(0.75, 1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+button {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-bottom: 10vh;
+  padding: 6px 6px 4px;
+  border: 5px solid hsl(196, 100%, 50%);
+  border-radius: 10px;
+  font: 24px/1em "Mogra", cursive;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 0 hsl(196, 100%, 50%);
+  background-color: hsl(196, 100%, 80%);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+  transition: all 80ms linear;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:hover {
+  transform: translate(-2px, -2px);
+  cursor: pointer;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.05);
+}
+
+button:active {
+  transform: translate(1px, 1px);
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 141 168" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-817.183,-572.291)">
+        <g id="Paper" transform="matrix(0.509216,0,0,0.509216,621.89,468.963)">
+            <path d="M391.716,520.457L406.305,336.239L411.233,204.68L659.074,222.321L641.624,303.676L638.871,411.391L630.012,491.066L627.456,528.07L467.988,519.611L391.716,520.457Z" style="fill:rgb(235,235,235);stroke:rgb(171,171,171);stroke-width:1.96px;"/>
+            <path d="M402.944,207.467L420.585,214.928L430.535,203.898L605.54,213.267L611.577,226.237L616.444,213.291L653.186,220.034L646.638,304.899L643.817,419.202L633.274,504.972L608.89,530.591L484.987,516.614L386.831,512.725L384.497,495.924L388.874,482.499L400.516,336.549L402.944,207.467Z" style="fill:rgb(235,235,235);stroke:rgb(171,171,171);stroke-width:1.96px;"/>
+            <path d="M608.899,505.653L633.274,504.972L609.036,530.591L608.899,505.653Z" style="fill:rgb(214,214,214);stroke:rgb(171,171,171);stroke-width:1.96px;"/>
+        </g>
+    </g>
+</svg>

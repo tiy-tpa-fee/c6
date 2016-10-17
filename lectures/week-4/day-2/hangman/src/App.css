@@ -1,0 +1,11 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 1em;
+}
+
+.App h1 {
+  margin: 0 auto;
+}

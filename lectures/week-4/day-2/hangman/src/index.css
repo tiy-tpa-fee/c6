@@ -1,0 +1,15 @@
+html {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+body {
+  position: relative;
+  font-family: 'Patua One', serif;
+  font-size: 32px;
+  background-color: rgb(208, 231, 226);
+  color: rgb(75, 15, 121);
+  min-height: 100vh;
+  overflow: hidden;
+}

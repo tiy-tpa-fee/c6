@@ -1,0 +1,12 @@
+.Letter {
+  display: inline-block;
+  width: 0.5em;
+  text-align: center;
+  border-bottom: 5px solid rgb(75, 15, 121);
+  color: transparent;
+  margin: 0 0.05em;
+}
+
+.Letter.revealed {
+  color: inherit;
+}

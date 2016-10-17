@@ -1,0 +1,230 @@
+@import 'utility'
+
+$base-text-size: 16px
+$base-font-family: sans-serif
+
+$brown: #615c57
+$orange: #f4c69d
+$beige: #f2ede4
+
+html
+  text-size-adjust: 100%
+
+body
+  @include font-smoothing(on)
+  margin: 0
+  font: $base-text-size / 1 $base-font-family
+  color: $brown
+
+html, body, #root, .app
+  height: 100%
+
+h1
+  margin: 0
+  color: transparent
+  height: 2em
+  background:
+    image: url('../images/sensei-sense.svg')
+    position: center
+    repeat: no-repeat
+
+.app
+  display: flex
+  flex-direction: column
+
+  main
+    flex: 1 1 auto
+    overflow-y: auto
+    position: relative
+
+  header, footer
+    flex: 0 0 auto
+
+header
+  padding: 0.5em
+  background-color: $orange
+
+main
+  background-color: $beige
+
+footer
+  padding: 0.5em
+  text-align: center
+  font-size: 0.8em
+  background-color: $brown
+  color: $beige
+
+.color-well
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+
+  .color
+    animation-duration: 1s, 0.5s
+    animation-name: grow, idle
+    animation-iteration-count: 1, infinite
+    animation-timing-function: ease-out, step-end
+
+.color
+  height: $sprite-size
+  width: $sprite-size
+  background-image: url('../images/color-sprites.svg')
+  background-repeat: no-repeat
+  background-size: $sprite-size*4 $sprite-size*2
+  animation: active 0.5s infinite step-end
+
+  &.green
+    filter: hue-rotate(0deg)
+
+  &.aqua
+    filter: hue-rotate(60deg) brightness(140%) saturate(60%)
+
+  &.blueberry
+    filter: hue-rotate(120deg)
+
+  &.fuschia
+    filter: hue-rotate(180deg)
+
+  &.fire
+    filter: hue-rotate(260deg) saturate(150%) brightness(70%) contrast(160%)
+
+  &.coal
+    filter: hue-rotate(320deg) saturate(20%) brightness(80%) contrast(150%)
+
+  &.dragging
+    animation: active 0.5s infinite step-end
+    pointer-events: none
+
+.game
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  display: flex
+  flex-direction: column
+
+  .turn
+    height: 20vw
+    display: flex
+    flex-direction: row
+
+  .cup, .pegs, .go
+    width: 20vw
+    height: 20vw
+
+  .go
+    background:
+      image: url('../images/go-button-inactive.svg')
+      position: center
+      repeat: no-repeat
+      size: 66%
+
+    button
+      border: none
+      color: transparent
+      opacity: 0
+      transition: all 200ms ease-in-out
+      background:
+        color: transparent
+        image: url('../images/go-button-active.svg')
+        position: center
+        repeat: no-repeat
+        size: 66%
+
+      &:focus
+        outline: none
+
+      &:hover
+        animation: go 400ms infinite ease-in-out
+        animation-direction: alternate
+        cursor: pointer
+
+      &:active
+        animation: none
+        opacity: 1
+        transform: rotateZ(15deg)
+
+  .cup
+    position: relative
+    height: 20vw
+    display: flex
+    align-content: center
+    justify-content: center
+    background:
+      image: url('../images/bowl-back.svg')
+      repeat: no-repeat
+      position: center
+      size: 66%
+
+    .front
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      background:
+        image: url('../images/bowl-front.svg')
+        repeat: no-repeat
+        position: center
+        size: 66%
+
+    &.highlight
+      filter: brightness(120%)
+
+  .pegs
+    display: flex
+    flex-wrap: wrap
+
+    .inexact_match, .miss, .exact_match
+      height: 40%
+      width: 40%
+      margin: 5%
+      background-repeat: no-repeat
+      background-position: center
+
+    .inexact_match
+      background-image: url('../images/white-tag.svg')
+
+    .miss
+      background-image: url('../images/no-tag.svg')
+      background-size: 18%
+      background-position: center 9%
+
+    .exact_match
+      background-image: url('../images/red-tag.svg')
+
+  .go
+    button
+      display: block
+      width: 100%
+      height: 100%
+
+  .previous
+    position: relative
+    flex: 1 1 auto
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    overflow-y: scroll
+
+    .turn
+      height: 20vw
+      flex-shrink: 0
+
+  .current
+    background-color: $orange
+    flex: 0 0 auto
+
+  .color-well
+    background-color: darken($orange, 10%)
+    flex: 0 0 auto
+
+  .draggable
+    position: absolute
+    top: 0
+    left: 0
+
+    .color
+      animation-name: color-active

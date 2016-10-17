@@ -1,0 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-family: "Oswald", "Helvetica", sans-serif;
+}
+
+ul.navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+ul.navigation li {
+  position: relative;
+  flex: 1;
+  margin-bottom: -5px; /* HACK: ??? WTF */
+}
+
+ul.navigation li img {
+  width: 100%;
+}
+
+ul.navigation li a {
+  font-size: 1.2em;
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  padding: 1em;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  text-transform: uppercase;
+}
+
+ul.navigation li a:link,
+ul.navigation li a:visited {
+  background-color: rgba(8, 52, 82, 0.5);
+  color: #083452;
+  text-decoration: none;
+}
+
+
+ul.navigation li a:focus,
+ul.navigation li a:hover,
+ul.navigation li a:active {
+  background-color: rgba(1, 1, 1, 0);
+  color: #FFFFFF;
+}
+
+footer {
+  margin: 0;
+  background-color: #083452;
+  color: #FFFFFF;
+}
+
+h1 {
+  margin: 0;
+}

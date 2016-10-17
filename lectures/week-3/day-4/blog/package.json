@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "browser-sync start -s -f index.html main.css bundle.js",
+    "build": "watchify main.js -o bundle.js"
+  },
+  "dependencies": {
+    "lodash": "^4.14.1",
+    "moment": "^2.14.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "browserify": "^13.1.0",
+    "watchify": "^3.7.0"
+  }
+}

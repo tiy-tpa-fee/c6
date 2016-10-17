@@ -1,0 +1,41 @@
+=font-smoothing($value: on)
+  @if $value == on
+    -moz-osx-font-smoothing: grayscale
+    -webkit-font-smoothing: antialiased
+  @else
+    -moz-osx-font-smoothing: auto
+    -webkit-font-smoothing: subpixel-antialiased
+
+$sprite-size: 16vw
+
+@keyframes grow
+  from
+    transform: scale(0)
+  to
+    transform: scale(1)
+
+@keyframes idle
+  0%
+    background-position: (-$sprite-size) (-$sprite-size)
+  33%
+    background-position: (-$sprite-size)*2 (-$sprite-size)
+  66%
+    background-position: (-$sprite-size)*3 (-$sprite-size)
+
+@keyframes active
+  0%
+    background-position: 0 0
+  20%
+    background-position: (-$sprite-size) 0
+  40%
+    background-position: (-$sprite-size)*2 0
+  60%
+    background-position: (-$sprite-size)*3 0
+  80%
+    background-position: 0 (-$sprite-size)
+
+@keyframes go
+  from
+    opacity: 0.5
+  to
+    opacity: 1

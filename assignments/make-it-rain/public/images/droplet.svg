@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 27 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-202.076,-122.923)">
+        <g id="Droplet" transform="matrix(0.294074,0,0,0.294074,20.9037,21.1718)">
+            <path d="M661.777,346.004C673.906,346.004 707.476,396.998 707.476,445.699C707.476,470.92 686.999,491.397 661.777,491.397C636.555,491.397 616.079,470.92 616.079,445.699C616.079,393.057 649.648,346.004 661.777,346.004Z" style="fill:rgb(155,249,255);"/>
+            <g transform="matrix(1,0,0,1,6.97935,-0.818532)">
+                <path d="M633.021,390.519C661.171,415.218 651.251,354.969 651.251,354.969C651.251,354.969 622.587,381.365 633.021,390.519Z" style="fill:rgb(202,252,255);"/>
+            </g>
+            <path d="M703.092,428.321C703.092,428.321 715.02,484.934 661.777,488.605C626.962,491.006 619.147,452.522 619.147,452.522C619.147,452.522 638.555,476.254 666.455,467.385C694.356,458.516 703.092,428.321 703.092,428.321Z" style="fill:rgb(84,209,255);"/>
+        </g>
+    </g>
+</svg>

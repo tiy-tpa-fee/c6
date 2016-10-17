@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 163 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-318.665,-603.237)">
+        <g id="Rock" transform="matrix(1.10029,0,0,1.10029,-316.081,310.805)">
+            <path d="M582.008,346.5L611.411,357.21L668.224,353.487L705.023,357.21L721.041,333.805L724.103,309.359L690.089,275.454L632.77,266.231L606.087,292.036L586.938,314.303L577.342,322.982L582.008,346.5Z" style="fill:rgb(214,214,214);stroke:rgb(171,171,171);stroke-width:0.91px;"/>
+            <path d="M620.655,288.649L632.479,284.661L633.552,272.769L688.398,280.233L720.131,311.585L669.832,315.258L638.907,300.954L653.042,316.817L631.819,326.388L613.149,303.867L620.655,288.649Z" style="fill:rgb(235,235,235);"/>
+            <path d="M668.851,349.594L702.597,353.724L716.53,332.388L716.779,322.105L673.481,323.844L663.501,340.054L623.049,353.724L668.851,349.594Z" style="fill:rgb(171,171,171);"/>
+        </g>
+    </g>
+</svg>
