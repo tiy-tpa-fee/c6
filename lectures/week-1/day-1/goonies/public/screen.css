@@ -1,14 +1,23 @@
-html {
-  text-size-adjust: 100%;
-}
-
 body {
-  font: 16px / 1 sans-serif;
+  font-family: 'Hoefler Text', 'Palatino', serif;
   background-image: url('./images/map.png');
-  background-repeat: none;
   background-position: center;
   color: #fbe943;
   text-align: center;
+}
+
+h1 {
+  background-image: url('./images/goonies.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: transparent;
+  height: 4em;
+}
+
+h2 {
+  text-transform: uppercase;
+  margin: 2em auto;
 }
 
 h2,
@@ -19,15 +28,6 @@ h3 {
 img {
   border: 0.25em solid #fbe943;
   box-shadow: 0.2em 0.2em 0 #1e3896;
-}
-
-h1 {
-  background-image: url('./images/goonies.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  color: transparent;
-  height: 4em;
 }
 
 ul,
