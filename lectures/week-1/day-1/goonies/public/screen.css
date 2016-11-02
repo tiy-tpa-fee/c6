@@ -1,0 +1,43 @@
+html {
+  text-size-adjust: 100%;
+}
+
+body {
+  font: 16px / 1 sans-serif;
+  background-image: url('./images/map.png');
+  background-repeat: none;
+  background-position: center;
+  color: #FBE943;
+  text-align: center;
+}
+
+h2, h3 {
+  text-shadow: 0.1em 0.1em 0 #1e3896;
+}
+
+img {
+  border: 0.25em solid #FBE943;
+  box-shadow: 0.2em 0.2em 0 #1e3896;
+}
+
+h1 {
+  background-image: url('./images/goonies.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: transparent;
+  height: 4em;
+}
+
+ul, ol {
+  width: 300px;
+  text-align: left;
+  margin: auto;
+}
+
+hr {
+  border: 0;
+  width: 80%;
+  border-bottom: 0.2em solid #FBE943;
+  box-shadow: 0.2em 0.2em 0 #1e3896;
+}
