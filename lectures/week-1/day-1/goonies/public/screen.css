@@ -7,16 +7,17 @@ body {
   background-image: url('./images/map.png');
   background-repeat: none;
   background-position: center;
-  color: #FBE943;
+  color: #fbe943;
   text-align: center;
 }
 
-h2, h3 {
+h2,
+h3 {
   text-shadow: 0.1em 0.1em 0 #1e3896;
 }
 
 img {
-  border: 0.25em solid #FBE943;
+  border: 0.25em solid #fbe943;
   box-shadow: 0.2em 0.2em 0 #1e3896;
 }
 
@@ -29,7 +30,8 @@ h1 {
   height: 4em;
 }
 
-ul, ol {
+ul,
+ol {
   width: 300px;
   text-align: left;
   margin: auto;
@@ -38,6 +40,6 @@ ul, ol {
 hr {
   border: 0;
   width: 80%;
-  border-bottom: 0.2em solid #FBE943;
+  border-bottom: 0.2em solid #fbe943;
   box-shadow: 0.2em 0.2em 0 #1e3896;
 }
