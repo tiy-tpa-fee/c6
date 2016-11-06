@@ -18,14 +18,18 @@ In your first assignment you will end up with a web page, no matter how simple, 
 
 - First, ensure you have the [`app-app` generator](https://github.com/tiy-tpa-fee/generator-app-app) installed. We will have done this in class.
 - Open your Terminal and create and change into the project's directory:
+
   ```sh
   mkdir -p ~/tiy/week-1/day-1/hello-world
   cd ~/tiy/week-1/day-1/hello-world
   ```
+
 - Run the generator to create a boilerplate project:
+
   ```sh
   yo app-app alpha
   ```
+
   This might take a minute to run, the generator is installing a handy development server and a tool to easily deploy our page to the web.
 - Let's create our `git` repository now, and start tracking changes right away:
   ```sh
