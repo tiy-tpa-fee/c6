@@ -6,6 +6,7 @@ In your first assignment you will end up with a web page, no matter how simple, 
 
 - Get to know your text editor.
 - Introduce yourself to working on the command line.
+- Publish a web page.
 
 ## Requirements
 
