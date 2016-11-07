@@ -44,7 +44,8 @@ Replicate the *DESIGNCO* design mockup below using HTML & CSS (Cascading Style S
 
   ```sh
   git init
-  git commit -am "Hello, App App"
+  git add .
+  git commit -m "Hello, App App"
   ```
 
   You can change the commit message to be anything you want.
@@ -63,6 +64,8 @@ Replicate the *DESIGNCO* design mockup below using HTML & CSS (Cascading Style S
   ```
 
   This should automatically happen, but if it doesn't; navigate to [http://localhost:3000](http://localhost:3000) in your browser. As you make changes to your code, the development server will automatically refresh this page in real-time.
+
+  While the development browser is running, it will control your Terminal, to exit it, press `Control-C`. You can always start it up again with `npm start`.
 
 - Using the file browser in your editor, open the files `public/index.html` and `public/screen.css` and mark up and style your document (remember all content goes _inside_ the `<body>` tags). Don't worry about the other files in the directory for now, we'll talk about those later, right now, we're mostly concerned with the two files in `public`; `index.html` and `screen.css`.
 

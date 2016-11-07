@@ -16,7 +16,11 @@ In your first assignment you will end up with a web page, no matter how simple, 
 
 ### Setup
 
-- First, ensure you have the [`app-app` generator](https://github.com/tiy-tpa-fee/generator-app-app) installed. We will have done this in class.
+- First, ensure you have the [`app-app` generator](https://github.com/tiy-tpa-fee/generator-app-app) installed. We may have done this in class, you only need to do it once:
+
+  ```sh
+  npm install -g yo generator-app-app
+  ```
 
 - Open your Terminal and create and change into the project's directory:
 
@@ -37,7 +41,8 @@ In your first assignment you will end up with a web page, no matter how simple, 
 
   ```sh
   git init
-  git commit -am "Hello, App App"
+  git add .
+  git commit -m "Hello, App App"
   ```
 
   You can change the commit message to be anything you want.
@@ -57,6 +62,8 @@ In your first assignment you will end up with a web page, no matter how simple, 
 
   This should automatically happen, but if it doesn't; navigate to [http://localhost:3000](http://localhost:3000) in your browser. As you make changes to your code, the development server will automatically refresh this page in real-time.
 
+  While the development browser is running, it will control your Terminal, to exit it, press `Control-C`. You can always start it up again with `npm start`.
+
 - Using the file browser in your editor, open the file `public/index.html` and format your essay with HTML tags and place them into the document (remember all content goes _inside_ the `<body>` tags). Don't worry about the other files in the directory for now, we'll talk about those later, right now, we're mostly concerned with the two files in `public`; `index.html` and `screen.css`.
 
 ### Explorer Mode
@@ -73,13 +80,21 @@ In your first assignment you will end up with a web page, no matter how simple, 
 
 ### Epic Mode
 
-- Install an `oh-my-zsh` theme of your liking. Take a screenshot of your terminal with the theme installed.
 - Create a full layout for your page (heading, navigation, sidebar, footer, etc.).
 - Use more complex CSS selectors than we covered in class.
 
 ## Turning In
 
 These steps will be followed for almost every assignment going forward. Once you've completed at least _explorer_ mode and you're satisfied with your work, let's get it published. First let's get it up on GitHub.
+
+- First, let's add all our work to git, and ask it to commit it:
+
+  ```sh
+  git add .
+  git commit -m "My first webpage"
+  ```
+
+  Feel free to replace _"My first webpage"_ with a more meaningful message.
 
 - In your browser, go to [GitHub](github.com) and create a new repository, I suggest using the title of the assignment (`hello-world`) for your repository name.
 
