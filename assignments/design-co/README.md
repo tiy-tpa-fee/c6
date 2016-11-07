@@ -44,7 +44,8 @@ Replicate the *DESIGNCO* design mockup below using HTML & CSS (Cascading Style S
 
   ```sh
   git init
-  git commit -am "Hello, App App"
+  git add .
+  git commit -m "Hello, Design Co"
   ```
 
   You can change the commit message to be anything you want.
@@ -73,7 +74,7 @@ Replicate the *DESIGNCO* design mockup below using HTML & CSS (Cascading Style S
 * Valid, neat, and organized HTML
 * Valid, neat, and organized CSS
 
-### Adventurer Mode
+### Adventure Mode
 
 * Make the top navigation bar links highlight the background color from top to bottom when hovered
 * Give the images to indication that you're hovering your cursor over them
@@ -100,6 +101,15 @@ These steps will be followed for almost every assignment going forward. Once you
   ```
 
   Conveniently, you can copy this line from GitHub after creating a new repo.
+
+- Add any last work to your git repository:
+
+```sh
+git add .
+git commit -m "Final updates"
+```
+
+Feel free to change _"Final updates"_ to a message of your choosing.
 
 - Push our local commits to GitHub:
 
