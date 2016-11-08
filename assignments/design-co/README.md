@@ -92,6 +92,15 @@ Replicate the *DESIGNCO* design mockup below using HTML & CSS (Cascading Style S
 
 These steps will be followed for almost every assignment going forward. Once you've completed at least _explorer_ mode and you're satisfied with your work, let's get it published. First let's get it up on GitHub.
 
+- First, let's add all our work to git, and ask it to commit it:
+
+  ```sh
+  git add .
+  git commit -m "DESIGNCO"
+  ```
+
+  Feel free to replace _"DESIGNCO"_ with a more meaningful message.
+
 - In your browser, go to [GitHub](github.com) and create a new repository, I suggest using the title of the assignment (`design-co`) for your repository name.
 
   ![Creating a new repository on GitHub](../hello-world/assets/new-repo.gif)

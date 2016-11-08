@@ -32,7 +32,6 @@ h3 {
 ul,
 ol {
   text-align: left;
-  margin: auto;
 }
 
 img {
@@ -46,8 +45,23 @@ hr {
   box-shadow: 0.1em 0.1em 0 #1e3896;
 }
 
+.goonie {
+  display: flex;
+  margin: 1em 0;
+}
+
+.goonie div {
+  text-align: left;
+  padding: 0 1em;
+}
+
+.goonie h3 {
+  margin-top: 0;
+}
+
 figure {
-  width: 120px;
+  margin: 0;
+  width: 200px;
 }
 
 figcaption {
@@ -55,37 +69,29 @@ figcaption {
   font-style: italic;
 }
 
-.originals .goonie {
-  display: flex;
-  margin: 2em 0;
-}
-
-.originals .goonie img {
-  min-width: 120px;
+.originals figure img {
   width: 100%;
-  height: auto;
+  min-width: 200px;
 }
 
-.goonie .info {
-  padding: 0 1em;
-  text-align: left;
+section.others div.goonie {
+  flex-direction: column;
+  text-align: center;
 }
 
-.goonie .info h3 {
-  margin-top: 0;
+section.others div.goonie div {
+  text-align: center;
 }
 
-.goonie figure {
-  margin: 0;
-}
-
-.others {
+section.others {
   display: flex;
   justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: row;
 }
 
-@media only screen and (max-width: 560px) {
-  .others {
+@media (max-width: 560px) {
+  section.others {
     flex-direction: column;
   }
 }
