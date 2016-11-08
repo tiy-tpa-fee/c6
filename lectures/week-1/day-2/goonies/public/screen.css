@@ -5,6 +5,11 @@ body {
   text-align: center;
 }
 
+main {
+  max-width: 42em;
+  margin: auto;
+}
+
 h1 {
   background-image: url('./images/goonies.png');
   background-position: center;
@@ -27,7 +32,6 @@ h3 {
 ul,
 ol {
   text-align: left;
-  width: 24em;
   margin: auto;
 }
 
@@ -40,4 +44,48 @@ hr {
   border: 0;
   border-bottom: 0.2em solid #fbe943;
   box-shadow: 0.1em 0.1em 0 #1e3896;
+}
+
+figure {
+  width: 120px;
+}
+
+figcaption {
+  font-size: 0.66em;
+  font-style: italic;
+}
+
+.originals .goonie {
+  display: flex;
+  margin: 2em 0;
+}
+
+.originals .goonie img {
+  min-width: 120px;
+  width: 100%;
+  height: auto;
+}
+
+.goonie .info {
+  padding: 0 1em;
+  text-align: left;
+}
+
+.goonie .info h3 {
+  margin-top: 0;
+}
+
+.goonie figure {
+  margin: 0;
+}
+
+.others {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 560px) {
+  .others {
+    flex-direction: column;
+  }
 }

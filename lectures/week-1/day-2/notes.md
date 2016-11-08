@@ -7,7 +7,6 @@ Issues
   - Smart quotes
   - others (HTML Entities)
 
-
 Machine setup
 - Homebrew install
 - Ruby install
@@ -75,4 +74,3 @@ Git and Github
       - Add a file
       - Commit a file
       - git push --set-upstream origin master
-
