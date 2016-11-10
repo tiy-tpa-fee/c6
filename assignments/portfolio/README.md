@@ -1,25 +1,24 @@
-# Octodex
+# A Portfolio
 
-GitHub has a great mascot called OctoCat. OctoCat even has it's own gallery of variations, created by GitHub itself and fans, called [Octodex](https://octodex.github.com).
+For your first weekend project, we're going to be starting work on a portfolio website that you can improve over the rest of your time here at The Iron Yard.
 
-Unfortunately, the Octodex is not responsive*! Today, your task is to recreate the layout of The Octodex as closely as possible, but make it responsive. You can use all the tools you have at your disposal to get the job done. Use your browser's Developer Tools to inspect their site to find the exact font sizes and padding amounts.
+![https://raw.githubusercontent.com/tiy-tpa-fee/fee-c6/master/assignments/portfolio/mockup.png]()
 
-![Octodex](https://tiy-learn-content.s3.amazonaws.com/ec8b2d13-octodex.png)
+You can find assets you'll need here:
 
-\* Well, _actually_ it uses javascript set the number of columns on page load, but we want to see interactive responsiveness when we resize our window!
+> https://github.com/tiy-tpa-fee/fee-c6/master/assignments/portfolio/assets
+
+The font used is [Roboto](https://fonts.google.com/specimen/Roboto).
 
 ## Objectives
 
 - Build on your knowledge of HTML & CSS
-- Implement a responsive design with media queries
 - Implement, from scratch, a given design
-- Understand HTML/CSS Layout
-- Be able to place elements on a page where you want them.
 - Use flexbox techniques layout pages.
 
 ## Requirements
 
-- You should strive to implement the design as close as possible, though, especially if you've never touch HTML or CSS before, this can be extraordinarily difficult, and will take a lot of practice and mileage.
+- Initially, you should implement the design as close as possible to the mockup. Later, you might choose to fit your own personality/style.
 
 - **Note**: You should complete at least the tasks given for _explorer_ mode as listed below before turning in the assignment, as well as before attempting _adventure_ or _epic_ modes.
 
@@ -30,8 +29,8 @@ Unfortunately, the Octodex is not responsive*! Today, your task is to recreate t
 - Open your Terminal and create and change into the project's directory:
 
   ```sh
-  mkdir -p ~/tiy/week-1/day-3/octodex
-  cd ~/tiy/week-1/day-3/octodex
+  mkdir -p ~/tiy/portfolio
+  cd ~/tiy/portfolio
   ```
 
 - Run the generator to create a boilerplate project:
@@ -73,11 +72,12 @@ Unfortunately, the Octodex is not responsive*! Today, your task is to recreate t
 
 ### Explorer Mode
 
-Recreate the page as closely as you possibly can. Use the same fonts, sizes, and colors. Download some of your favorite Octocat images to use in your page (12-16 or so). Your layout should be flexible, but doesn't need to _perfectly_ responsive. Use flexbox styles to layout the header and the Octocats (hint: checkout the `flex-wrap` property).
+- Recreate the page as closely as you possibly can. Use the same fonts, sizes, and colors.
 
-## Adventure Mode
+### Adventure Mode
 
-If you're feeling adventurous, use CSS _media queries_ to resize the Octocat containers to look great as a single full-width column on small screens, and a nice grid on bigger screens.
+- Take the time to personalize the site.
+- Keep it professional, but make it your own.
 
 ## Turning In
 
@@ -87,19 +87,19 @@ These steps will be followed for almost every assignment going forward. Once you
 
   ```sh
   git add .
-  git commit -m "Octodex"
+  git commit -m "Portfolio"
   ```
 
-  Feel free to replace _"Octodex"_ with a more meaningful message.
+  Feel free to replace _"Portfolio"_ with a more meaningful message.
 
-- In your browser, go to [GitHub](github.com) and create a new repository, I suggest using the title of the assignment (`octodex`) for your repository name.
+- In your browser, go to [GitHub](github.com) and create a new repository, I suggest using the title of the assignment (`portfolio`) for your repository name.
 
   ![Creating a new repository on GitHub](https://raw.githubusercontent.com/tiy-tpa-fee/fee-c6/master/assignments/hello-world/hello-world/assets/new-repo.gif)
 
 - Add the empty repository you created on GitHub as a _remote_ to your local repo:
 
   ```sh
-  git remote add origin git@github.com:USERNAME/octodex.git
+  git remote add origin git@github.com:USERNAME/portfolio.git
   ```
 
   Conveniently, you can copy this line from GitHub after creating a new repo.
@@ -123,12 +123,9 @@ These steps will be followed for almost every assignment going forward. Once you
 
 - Turn in the URL to your repository on GitHub in newline. It should look like:
 
-  > `https://github.com/USERNAME/octodex`
+  > `https://github.com/USERNAME/portfolio`
 
 ## Additional Resources
 
 - [Google Fonts](http://google.com/fonts)
 - [What the Flexbox?!](http://flexbox.io)
-- [Learn CSS Layout](http://learnlayout.com/)
-- [CSS Triangle Generator](http://apps.eky.hk/css-triangle-generator/)
-- [Responsive Web Design](http://alistapart.com/article/responsive-web-design/)
