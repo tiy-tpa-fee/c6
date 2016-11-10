@@ -2,7 +2,7 @@
 
 For your first weekend project, we're going to be starting work on a portfolio website that you can improve over the rest of your time here at The Iron Yard.
 
-![https://raw.githubusercontent.com/tiy-tpa-fee/fee-c6/master/assignments/portfolio/mockup.png]()
+![Mockup](https://raw.githubusercontent.com/tiy-tpa-fee/fee-c6/master/assignments/portfolio/mockup.png)
 
 You can find assets you'll need here:
 
