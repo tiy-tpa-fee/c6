@@ -6,7 +6,7 @@ For your first weekend project, we're going to be starting work on a portfolio w
 
 You can find assets you'll need here:
 
-> https://github.com/tiy-tpa-fee/fee-c6/master/assignments/portfolio/assets
+> https://github.com/tiy-tpa-fee/fee-c6/tree/master/assignments/portfolio/assets
 
 The font used is [Roboto](https://fonts.google.com/specimen/Roboto).
 
