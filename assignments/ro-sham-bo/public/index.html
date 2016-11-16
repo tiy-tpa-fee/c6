@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Ro! Sham! Bo!</title>
+    <link href="/screen.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Eczar:400,700" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <h1>Ro! Sham! Bo!</h1>
+      <section>
+        <figure class="player">
+          <figcaption>Player</figcaption>
+          <img src="/images/unknown.svg" alt="Player Move" height="200" width="200">
+        </figure>
+        <div class="scores">
+          <span class="player">0</span>
+          :
+          <span class="computer">0</span>
+        </div>
+        <figure class="computer">
+          <figcaption>Computer</figcaption>
+          <img src="/images/unknown.svg" alt="Computer Move" height="200" width="200">
+        </figure>
+      </section>
+      <p>Choose your weapon wisely.</p>
+      <ul class="player-input">
+        <li><button class="rock">Rock</button></li>
+        <li><button class="paper">Paper</button></li>
+        <li><button class="scissors">Scissors</button></li>
+      </ul>
+    </main>
+    <div class="overlay">
+      <div class="dialog">
+        <h3>!!!</h3>
+        <button>Play Again</button>
+      </div>
+    </div>
+    <script src="/main.js" charset="utf-8"></script>
+  </body>
+</html>

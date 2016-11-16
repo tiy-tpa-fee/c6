@@ -1,0 +1,234 @@
+html {
+  text-size-adjust: 100%;
+  height: 100%;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  font-family: 'Eczar', serif;
+  height: 100%;
+  background-color: hsl(200, 33%, 90%);
+  color: hsl(200, 5%, 25%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  transition: filter 400ms ease-out;
+}
+
+section {
+  display: flex;
+  align-items: center;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: calc((33vw + 33vh) / 2);
+  height: calc((33vw + 33vh) / 2);
+  max-width: 33vw;
+  max-height: 33vw;
+  padding-bottom: 10px;
+  background-color: hsl(200, 33%, 85%);
+  border-radius: 5px;
+}
+
+figure figcaption {
+  text-align: center;
+  font-size: 3vw;
+  text-transform: uppercase;
+}
+
+figure img {
+  width: 66%;
+  height: 66%;
+  transform: scale(1);
+  transition: transform 200ms ease;
+}
+
+figure.lose img {
+  animation: 1s ease infinite alternate lose;
+  transform: scale(0.8);
+}
+
+figure.win img {
+  animation: 1s ease infinite alternate win;
+}
+
+figure.draw img {
+  animation: 1s ease 1 alternate draw;
+  filter: drop-shadow(0 0 5px hsl(0, 0%, 50%));
+}
+
+.scores {
+  font-size: 5vw;
+  display: flex;
+}
+
+.scores span {
+  font-size: 5vw;
+  display: block;
+}
+
+.scores span.player {
+  text-align: right;
+}
+
+.player-input {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+}
+
+.player-input li {
+  margin: 20px;
+}
+
+.player-input button {
+  display: block;
+  height: calc((25vw + 25vh) / 2);
+  width: calc((25vw + 25vh) / 2);
+  max-width: 25vw;
+  max-height: 25vw;
+  color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 66%;
+}
+
+.player-input button:hover {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.player-input button:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.player-input button.rock {
+  background-image: url('/images/rock.svg');
+}
+
+.player-input button.paper {
+  background-image: url('/images/paper.svg');
+}
+
+.player-input button.scissors {
+  background-image: url('/images/scissors.svg');
+}
+
+button {
+  color: #eee;
+  background-color: hsl(200, 66%, 66%);
+  border: none;
+  border-radius: 5px;
+  transition: background-color 200ms ease;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-color: hsl(200, 66%, 75%);
+}
+
+button:active {
+  background-color: hsl(200, 66%, 33%);
+}
+
+.dialog {
+  background-color: hsl(200, 33%, 90%);
+  color: hsl(200, 5%, 25%);
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.dialog h3 {
+  font-size: 2em;
+  margin: 1em;
+}
+
+.dialog button {
+  padding: 0.4em 0.5em 0.3em;
+  margin: 1em;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  font-family: 'Eczar', serif;
+}
+
+body:not(.modal) .overlay {
+  display: none;
+  filter: blur(0);
+}
+
+body.modal main {
+  filter: blur(20px);
+  transition: filter 50ms ease;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.33);
+}
+
+@keyframes lose {
+  from {
+    filter: drop-shadow(0 0 5px hsla(0, 66%, 50%, 0.5));
+  }
+
+  to {
+    filter: drop-shadow(0 0 5px hsla(0, 66%, 50%, 1));
+  }
+}
+
+@keyframes win {
+  from {
+    filter: drop-shadow(0 0 5px hsla(100, 66%, 50%, 0.5));
+    transform: scale(1);
+  }
+
+  to {
+    filter: drop-shadow(0 0 5px hsla(100, 66%, 50%, 1));
+    transform: scale(1.1);
+  }
+}
+
+@keyframes draw {
+  10%,
+  90% {
+    transform: translate(-1px, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate(2px, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate(-4px, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate(4px, 0);
+  }
+}
