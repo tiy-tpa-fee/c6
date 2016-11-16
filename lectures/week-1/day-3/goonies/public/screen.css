@@ -1,0 +1,147 @@
+body {
+  color: #fbe943;
+  background-image: url('./images/map.png');
+  font-family: 'Arbutus Slab', 'Hoefler Text', 'Palatino', serif;
+  text-align: center;
+}
+
+main {
+  max-width: 42em;
+  margin: auto;
+}
+
+a:link,
+a:visited {
+  color: #eb9626;
+  text-decoration: none;
+}
+
+a:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: #d24f17;
+}
+
+h1 {
+  background-image: url('./images/goonies.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
+  height: 4em;
+}
+
+h2 {
+  text-transform: uppercase;
+  margin: 2em;
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h2,
+h3 {
+  text-shadow: 0.1em 0.1em 0 #1e3896;
+  font-family: 'Bangers', cursive;
+  font-weight: normal;
+}
+
+ul,
+ol {
+  text-align: left;
+}
+
+.goonie:not(.deceased) img {
+  border: 0.2em solid #fbe943;
+  box-shadow: 0.2em 0.2em 0 #1e3896;
+}
+
+.goonie.deceased img {
+  border: 0.2em solid #1e3896;
+  box-shadow: 0.2em 0.2em 0 #1c2854;
+}
+
+
+hr {
+  border: 0;
+  border-bottom: 0.2em solid #fbe943;
+  box-shadow: 0.1em 0.1em 0 #1e3896;
+}
+
+.goonie {
+  display: flex;
+  margin: 1em 0;
+}
+
+.goonie div {
+  text-align: left;
+  padding: 0 1em;
+}
+
+.goonie h3 {
+  margin-top: 0;
+}
+
+.deceased {
+  opacity: 0.5;
+}
+
+figure {
+  margin: 0;
+  width: 200px;
+}
+
+figcaption {
+  font-size: 0.66em;
+  font-style: italic;
+}
+
+.originals figure img {
+  width: 100%;
+  min-width: 200px;
+}
+
+section.others div.goonie {
+  flex-direction: column;
+  text-align: center;
+}
+
+section.others div.goonie div {
+  text-align: center;
+}
+
+section.others {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+@media (max-width: 600px) {
+  .goonie {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .goonie figure {
+    margin: 0 auto;
+  }
+
+  .goonie div {
+    text-align: center;
+  }
+
+  section.others {
+    flex-direction: column;
+    align-items: center;
+  }
+}

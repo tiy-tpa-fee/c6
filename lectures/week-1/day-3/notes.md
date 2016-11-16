@@ -58,4 +58,3 @@
 - Plugins for atom
  - emmet
  - color picker
- - live reload

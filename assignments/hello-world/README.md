@@ -96,7 +96,7 @@ These steps will be followed for almost every assignment going forward. Once you
 
   Feel free to replace _"My first webpage"_ with a more meaningful message.
 
-- In your browser, go to [GitHub](github.com) and create a new repository, I suggest using the title of the assignment (`hello-world`) for your repository name.
+- In your browser, go to [GitHub](http://github.com) and create a new repository, I suggest using the title of the assignment (`hello-world`) for your repository name.
 
   ![Creating a new repository on GitHub](assets/new-repo.gif)
 
