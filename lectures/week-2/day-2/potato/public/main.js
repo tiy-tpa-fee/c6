@@ -1,3 +1,8 @@
+const makeHappy = () => {
+  const finnAndJake = 'http://i.imgur.com/2sZW4m5.gif'
+  document.querySelector('img').src = finnAndJake
+}
+
 const main = () => {
   const root = document.querySelector('#heading')
   root.textContent = 'Hello, World!'
@@ -8,8 +13,17 @@ const main = () => {
     li.textContent = li.textContent.toUpperCase()
   }
 
-  const finnAndJake = 'http://i.imgur.com/2sZW4m5.gif'
-  document.querySelector('img').src = finnAndJake
+  const button = document.querySelector('button.happy')
+  button.addEventListener('click', makeHappy)
+
+  const box = document.querySelector('.box')
+  box.addEventListener('mouseover', () => {
+    box.className = 'box awesome'
+  })
+
+  box.addEventListener('mouseout', () => {
+    box.className = 'box'
+  })
 }
 
 document.addEventListener('DOMContentLoaded', main)

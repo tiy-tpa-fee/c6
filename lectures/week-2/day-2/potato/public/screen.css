@@ -6,3 +6,16 @@ body {
   margin: 0;
   font: 16px / 1 sans-serif;
 }
+
+.box {
+  margin: 1em auto;
+  background-color: #333;
+  width: 100px;
+  height: 100px;
+  transition: transform;
+}
+
+.box.awesome {
+  background-color: purple;
+  transform: rotate(15deg);
+}
