@@ -1,6 +1,6 @@
 const displayFibbs = (event) => {
-  event.preventDefault()
-  const input = document.querySelector('input')
+  if (event) event.preventDefault()
+  const input = document.querySelector('input[name=n]')
   const n = parseInt(input.value)
 
   const fibbs = fibbonacci(n)
@@ -14,6 +14,11 @@ const displayFibbs = (event) => {
   for (let i = 0; i < fibbs.length; i++) {
     const li = document.createElement('li')
     li.textContent = fibbs[i]
+
+    const hue = Math.round((i / n) * 255)
+
+    li.style.backgroundColor = `hsl(${hue}, 100%, 50%)`
+
     list.appendChild(li)
   }
 }
@@ -38,6 +43,7 @@ const fibbonacci = (n) => {
 const main = () => {
   const input = document.querySelector('input')
   input.addEventListener('input', displayFibbs)
+  displayFibbs()
 }
 
 document.addEventListener('DOMContentLoaded', main)
