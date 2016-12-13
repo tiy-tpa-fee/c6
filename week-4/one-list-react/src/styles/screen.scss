@@ -1,0 +1,14 @@
+@import 'utility';
+
+$base-text-size: 16px;
+$base-font-family: sans-serif;
+
+html {
+  text-size-adjust: 100%;
+}
+
+body {
+  @include font-smoothing(on);
+  margin: 0;
+  font: $base-text-size / 1 $base-font-family;
+}
