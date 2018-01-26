@@ -70,7 +70,6 @@ ol {
   box-shadow: 0.2em 0.2em 0 #1c2854;
 }
 
-
 hr {
   border: 0;
   border-bottom: 0.2em solid #fbe943;
@@ -110,9 +109,9 @@ figcaption {
   min-width: 200px;
 }
 
-section.others div.goonie {
-  flex-direction: column;
-  text-align: center;
+_ {
+  _: _;
+  _: _;
 }
 
 section.others div.goonie div {
